@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calabachop - Compra tu producto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f6;
+      margin: 0; padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #333;
+    }
+    header {
+      background-color: #28a745;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    main {
+      flex: 1;
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin-top: 0;
+      color: #28a745;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #d63333;
+      margin: 20px 0;
+    }
+    form input[type="submit"] {
+      background-color: #d63333;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    form input[type="submit"]:hover {
+      background-color: #a52727;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #777;
+      background-color: #e9ecef;
+    }
+  </style>
+</head>
+<body>
+
+<header>Calabachop</header>
+
+<main>
+  <img src="https://via.placeholder.com/600x400?text=Calabachop" alt="Producto Calabachop" />
+  <h1>Calabachop</h1>
+  <p>
+    Calabachop es el producto innovador que cambiará tu rutina. Calidad garantizada, diseño exclusivo y fácil de usar.
+  </p>
+  <div class="price">Precio: 49,99 €</div>
+
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <!-- Cambia este correo por el tuyo de PayPal para recibir pagos -->
+    <input type="hidden" name="business" value="tu-email-paypal@example.com" />
+    <input type="hidden" name="cmd" value="_xclick" />
+    <input type="hidden" name="item_name" value="Calabachop" />
+    <input type="hidden" name="amount" value="49.99" />
+    <input type="hidden" name="currency_code" value="EUR" />
+    <input type="submit" value="Comprar ahora con PayPal" />
+  </form>
+</main>
+
+<footer>
+  &copy; 2025 Calabachop. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
