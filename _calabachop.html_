@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calabachop - Producto Exclusivo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .product-image {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #4CAF50;
+    }
+    p.description {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #E53935;
+      margin-bottom: 30px;
+    }
+    button.buy-button {
+      background-color: #E53935;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+    button.buy-button:hover {
+      background-color: #b71c1c;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>Calabachop</header>
+
+<div class="container">
+  <img
+    src="https://via.placeholder.com/600x400.png?text=Calabachop"
+    alt="Calabachop Producto"
+    class="product-image"
+  />
+  <h2>Calabachop</h2>
+  <p class="description">
+    Descubre Calabachop, el producto exclusivo que necesitas para mejorar tu día a día. Calidad premium, diseño innovador y satisfacción garantizada.
+  </p>
+  <div class="price">Precio: 49,99 €</div>
+  <button class="buy-button" onclick="alert('Gracias por tu compra de Calabachop!')">
+    Comprar ahora
+  </button>
+</div>
+
+<footer>
+  &copy; 2025 Calabachop. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
